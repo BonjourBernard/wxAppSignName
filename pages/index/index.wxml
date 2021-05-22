@@ -1,0 +1,8 @@
+<sign-name id="signNameComponent" lineColor="{{lineColor}}" backColor="{{backColor}}" width="{{canvasWidth}}" height="{{canvasHeight}}" bindcreatImgBack="getImg">
+</sign-name>
+<view style="display:flex;margin: 30rpx;">
+<button bindtap="finishSign">生成图片</button>
+<button bindtap="cleanSign">重置</button>
+</view>
+
+<image src="{{signImg}}"></image>

@@ -1,0 +1,22 @@
+
+<block wx:if="{{componentReady}}">
+<!-- 低版本 -->
+<canvas class="sign_canvas" 
+    wx:if="{{lowVision}}"
+    disable-scroll 
+    canvas-id="signCanvas" 
+    bindtouchstart="signStart" 
+    bindtouchmove="signMove" 
+    bindtouchend="signEnd"
+    style="width:{{width}}rpx;height:{{height}}rpx;"></canvas>
+<!-- 高版本 type=2d -->
+<canvas class="sign_canvas" 
+    wx:else
+    disable-scroll 
+    type="2d" 
+    id="signCanvas" 
+    bindtouchstart="signStart" 
+    bindtouchmove="signMove" 
+    bindtouchend="signEnd"
+    style="width:{{width}}rpx;height:{{height}}rpx;"></canvas>
+</block>
