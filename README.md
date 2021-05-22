@@ -32,6 +32,7 @@ lineColor|String|否|#000|线条颜色
 bindcreatImgBack|事件回调|否| |签名图片生成后回调函数e.detail会返回{code,imgPath}。imgPath为生成的图片路径，code='success'表示成功，'fail'表示失败，'noSign'表示用户并未签名。
 
 生成图片 清空画布 需要主动调用组件方法
+
 生成图片（生成图片后会调用绑定在组件上的bindcreatImgBack）
 ```
 let sign = this.selectComponent('#signNameComponent')
